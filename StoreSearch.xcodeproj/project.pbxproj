@@ -43,6 +43,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0509E146206C3AA4006FD771 /* nibs */ = {
+			isa = PBXGroup;
+			children = (
+				0526145B2069A5A100BB1DCA /* NothingFoundCell.xib */,
+				0526145720699D0C00BB1DCA /* SearchResultCell.xib */,
+			);
+			path = nibs;
+			sourceTree = "<group>";
+		};
 		0592ABC120697BFA00189CF5 = {
 			isa = PBXGroup;
 			children = (
@@ -62,16 +71,15 @@
 		0592ABCC20697BFA00189CF5 /* StoreSearch */ = {
 			isa = PBXGroup;
 			children = (
-				052614592069A1ED00BB1DCA /* SearchResultCell.swift */,
 				0592ABCD20697BFA00189CF5 /* AppDelegate.swift */,
-				0592ABCF20697BFA00189CF5 /* SearchViewController.swift */,
-				0526145B2069A5A100BB1DCA /* NothingFoundCell.xib */,
-				0526145520698B8B00BB1DCA /* SearchResult.swift */,
-				0592ABD120697BFA00189CF5 /* Main.storyboard */,
 				0592ABD420697BFA00189CF5 /* Assets.xcassets */,
-				0526145720699D0C00BB1DCA /* SearchResultCell.xib */,
-				0592ABD620697BFA00189CF5 /* LaunchScreen.storyboard */,
 				0592ABD920697BFA00189CF5 /* Info.plist */,
+				0592ABD620697BFA00189CF5 /* LaunchScreen.storyboard */,
+				0592ABD120697BFA00189CF5 /* Main.storyboard */,
+				0509E146206C3AA4006FD771 /* nibs */,
+				0526145520698B8B00BB1DCA /* SearchResult.swift */,
+				052614592069A1ED00BB1DCA /* SearchResultCell.swift */,
+				0592ABCF20697BFA00189CF5 /* SearchViewController.swift */,
 			);
 			path = StoreSearch;
 			sourceTree = "<group>";
