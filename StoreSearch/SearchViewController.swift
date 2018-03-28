@@ -24,6 +24,7 @@ class SearchViewController: UIViewController {
         tableView.rowHeight = 80
         cellNib = UINib(nibName: TableViewCellIdentifiers.nothingFoundCell, bundle: nil)
         tableView.register(cellNib, forCellReuseIdentifier: TableViewCellIdentifiers.nothingFoundCell)
+        searchBar.becomeFirstResponder()  //makes keyboard immediately visible
     }
 
     override func didReceiveMemoryWarning() {
