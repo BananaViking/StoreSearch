@@ -29,6 +29,12 @@ class SearchResultCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
+    override func prepareForReuse() {    //cancels pending image downloads for reused table view cells
+        super.prepareForReuse()
+        downloadTask?.cancel()
+        downloadTask = nil
+    }
+    
     //MARK: - Public Methods
     func configure(for result: SearchResult) {
         nameLabel.text = result.name
