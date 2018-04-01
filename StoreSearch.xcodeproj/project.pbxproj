@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		05174DAD206EC9760023DD5A /* UIImageView+DownloadImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05174DAC206EC9760023DD5A /* UIImageView+DownloadImage.swift */; };
 		0526145620698B8B00BB1DCA /* SearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0526145520698B8B00BB1DCA /* SearchResult.swift */; };
 		0526145820699D0C00BB1DCA /* SearchResultCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0526145720699D0C00BB1DCA /* SearchResultCell.xib */; };
 		0526145A2069A1ED00BB1DCA /* SearchResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 052614592069A1ED00BB1DCA /* SearchResultCell.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		05174DAC206EC9760023DD5A /* UIImageView+DownloadImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+DownloadImage.swift"; sourceTree = "<group>"; };
 		0526145520698B8B00BB1DCA /* SearchResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResult.swift; sourceTree = "<group>"; };
 		0526145720699D0C00BB1DCA /* SearchResultCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchResultCell.xib; sourceTree = "<group>"; };
 		052614592069A1ED00BB1DCA /* SearchResultCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultCell.swift; sourceTree = "<group>"; };
@@ -79,6 +81,7 @@
 				0526145520698B8B00BB1DCA /* SearchResult.swift */,
 				052614592069A1ED00BB1DCA /* SearchResultCell.swift */,
 				0592ABCF20697BFA00189CF5 /* SearchViewController.swift */,
+				05174DAC206EC9760023DD5A /* UIImageView+DownloadImage.swift */,
 				05B9C763206D33D100A73E8E /* LoadingCell.xib */,
 			);
 			path = StoreSearch;
@@ -162,6 +165,7 @@
 				0526145620698B8B00BB1DCA /* SearchResult.swift in Sources */,
 				0526145A2069A1ED00BB1DCA /* SearchResultCell.swift in Sources */,
 				0592ABCE20697BFA00189CF5 /* AppDelegate.swift in Sources */,
+				05174DAD206EC9760023DD5A /* UIImageView+DownloadImage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
