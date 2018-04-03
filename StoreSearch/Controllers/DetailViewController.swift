@@ -10,9 +10,6 @@ import UIKit
 
 class DetailViewController: UIViewController {
 
-    var searchResult: SearchResult!
-    var downloadTask: URLSessionDownloadTask?
-    
     @IBOutlet weak var popupView: UIView!
     @IBOutlet weak var artworkImageView: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
@@ -20,6 +17,15 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var kindLabel: UILabel!
     @IBOutlet weak var genreLabel: UILabel!
     @IBOutlet weak var priceButton: UIButton!
+    
+    enum AnimationStyle {
+        case slide
+        case fade
+    }
+    
+    var searchResult: SearchResult!
+    var downloadTask: URLSessionDownloadTask?
+    var dismissStyle = AnimationStyle.fade
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
@@ -50,6 +56,7 @@ class DetailViewController: UIViewController {
     
     //MARK: - Actions
     @IBAction func close() {
+        dismissStyle = .slide
         dismiss(animated: true, completion: nil)
     }
     
@@ -91,7 +98,7 @@ class DetailViewController: UIViewController {
             downloadTask = artworkImageView.loadImage(url: largeURL)
         }
     }
-    
+
     deinit {
         //cancel image download if user closes pop-up before finished downloading
         downloadTask?.cancel()
@@ -107,6 +114,15 @@ extension DetailViewController: UIViewControllerTransitioningDelegate {
     //employ the bounce animation for detail pop-up
     func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
         return BounceAnimationController()
+    }
+    
+    func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        switch dismissStyle {
+        case .slide:
+            return SlideOutAnimationController()
+        case .fade:
+            return FadeOutAnimationController()
+        }
     }
 }
 

@@ -22,6 +22,8 @@
 		0592ABD320697BFA00189CF5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0592ABD120697BFA00189CF5 /* Main.storyboard */; };
 		0592ABD520697BFA00189CF5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0592ABD420697BFA00189CF5 /* Assets.xcassets */; };
 		05B9C764206D33D100A73E8E /* LoadingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05B9C763206D33D100A73E8E /* LoadingCell.xib */; };
+		05C05AB5207426E70013426B /* FadeOutAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C05AB4207426E70013426B /* FadeOutAnimationController.swift */; };
+		05C05AB720742BE20013426B /* SlideOutAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C05AB620742BE20013426B /* SlideOutAnimationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +44,8 @@
 		0592ABD420697BFA00189CF5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0592ABD920697BFA00189CF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		05B9C763206D33D100A73E8E /* LoadingCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoadingCell.xib; sourceTree = "<group>"; };
+		05C05AB4207426E70013426B /* FadeOutAnimationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FadeOutAnimationController.swift; sourceTree = "<group>"; };
+		05C05AB620742BE20013426B /* SlideOutAnimationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideOutAnimationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,8 +75,10 @@
 				05323E922072C20F00E655DD /* BounceAnimationController.swift */,
 				053F26C92071435F00C7FD3B /* DetailViewController.swift */,
 				053F26CC2071471B00C7FD3B /* DimmingPresentationController.swift */,
+				05C05AB4207426E70013426B /* FadeOutAnimationController.swift */,
 				05323E942072CCC400E655DD /* LandscapeViewController.swift */,
 				0592ABCF20697BFA00189CF5 /* SearchViewController.swift */,
+				05C05AB620742BE20013426B /* SlideOutAnimationController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -189,11 +195,13 @@
 				05323E952072CCC400E655DD /* LandscapeViewController.swift in Sources */,
 				0526145620698B8B00BB1DCA /* SearchResult.swift in Sources */,
 				0526145A2069A1ED00BB1DCA /* SearchResultCell.swift in Sources */,
+				05C05AB5207426E70013426B /* FadeOutAnimationController.swift in Sources */,
 				05323E932072C20F00E655DD /* BounceAnimationController.swift in Sources */,
 				053F26CA2071435F00C7FD3B /* DetailViewController.swift in Sources */,
 				0592ABCE20697BFA00189CF5 /* AppDelegate.swift in Sources */,
 				05323E912072B82600E655DD /* GradientView.swift in Sources */,
 				05174DAD206EC9760023DD5A /* UIImageView+DownloadImage.swift in Sources */,
+				05C05AB720742BE20013426B /* SlideOutAnimationController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
