@@ -19,7 +19,7 @@ class LandscapeViewController: UIViewController {
         }, completion: nil)
     }
     
-    var searchResults = [SearchResult]()
+    var search: Search!
     private var firstTime = true
     //keep track of all active URLSessionDownloadTask objects
     private var downloads = [URLSessionDownloadTask]()
@@ -54,7 +54,7 @@ class LandscapeViewController: UIViewController {
         
         if firstTime {
             firstTime = false
-            tileButtons(searchResults)
+            tileButtons(search.searchResults)
         }
     }
     

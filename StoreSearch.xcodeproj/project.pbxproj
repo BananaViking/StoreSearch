@@ -12,6 +12,7 @@
 		0526145820699D0C00BB1DCA /* SearchResultCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0526145720699D0C00BB1DCA /* SearchResultCell.xib */; };
 		0526145A2069A1ED00BB1DCA /* SearchResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 052614592069A1ED00BB1DCA /* SearchResultCell.swift */; };
 		0526145C2069A5A100BB1DCA /* NothingFoundCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0526145B2069A5A100BB1DCA /* NothingFoundCell.xib */; };
+		052C2F11207560E3000B4B36 /* Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = 052C2F10207560E3000B4B36 /* Search.swift */; };
 		05323E912072B82600E655DD /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05323E902072B82600E655DD /* GradientView.swift */; };
 		05323E932072C20F00E655DD /* BounceAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05323E922072C20F00E655DD /* BounceAnimationController.swift */; };
 		05323E952072CCC400E655DD /* LandscapeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05323E942072CCC400E655DD /* LandscapeViewController.swift */; };
@@ -32,6 +33,7 @@
 		0526145720699D0C00BB1DCA /* SearchResultCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchResultCell.xib; sourceTree = "<group>"; };
 		052614592069A1ED00BB1DCA /* SearchResultCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultCell.swift; sourceTree = "<group>"; };
 		0526145B2069A5A100BB1DCA /* NothingFoundCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NothingFoundCell.xib; sourceTree = "<group>"; };
+		052C2F10207560E3000B4B36 /* Search.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Search.swift; sourceTree = "<group>"; };
 		05323E902072B82600E655DD /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		05323E922072C20F00E655DD /* BounceAnimationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BounceAnimationController.swift; sourceTree = "<group>"; };
 		05323E942072CCC400E655DD /* LandscapeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandscapeViewController.swift; sourceTree = "<group>"; };
@@ -69,6 +71,16 @@
 			path = nibs;
 			sourceTree = "<group>";
 		};
+		052C2F12207561A1000B4B36 /* Search Files */ = {
+			isa = PBXGroup;
+			children = (
+				052C2F10207560E3000B4B36 /* Search.swift */,
+				0526145520698B8B00BB1DCA /* SearchResult.swift */,
+				052614592069A1ED00BB1DCA /* SearchResultCell.swift */,
+			);
+			path = "Search Files";
+			sourceTree = "<group>";
+		};
 		053F26CB2071436E00C7FD3B /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -102,16 +114,15 @@
 		0592ABCC20697BFA00189CF5 /* StoreSearch */ = {
 			isa = PBXGroup;
 			children = (
-				0592ABCD20697BFA00189CF5 /* AppDelegate.swift */,
-				0592ABD420697BFA00189CF5 /* Assets.xcassets */,
-				053F26CB2071436E00C7FD3B /* Controllers */,
-				0592ABD920697BFA00189CF5 /* Info.plist */,
 				0592ABD120697BFA00189CF5 /* Main.storyboard */,
+				0592ABCD20697BFA00189CF5 /* AppDelegate.swift */,
 				05323E902072B82600E655DD /* GradientView.swift */,
-				0509E146206C3AA4006FD771 /* nibs */,
-				0526145520698B8B00BB1DCA /* SearchResult.swift */,
-				052614592069A1ED00BB1DCA /* SearchResultCell.swift */,
 				05174DAC206EC9760023DD5A /* UIImageView+DownloadImage.swift */,
+				0592ABD420697BFA00189CF5 /* Assets.xcassets */,
+				0592ABD920697BFA00189CF5 /* Info.plist */,
+				053F26CB2071436E00C7FD3B /* Controllers */,
+				0509E146206C3AA4006FD771 /* nibs */,
+				052C2F12207561A1000B4B36 /* Search Files */,
 			);
 			path = StoreSearch;
 			sourceTree = "<group>";
@@ -190,6 +201,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				052C2F11207560E3000B4B36 /* Search.swift in Sources */,
 				0592ABD020697BFA00189CF5 /* SearchViewController.swift in Sources */,
 				053F26CD2071471B00C7FD3B /* DimmingPresentationController.swift in Sources */,
 				05323E952072CCC400E655DD /* LandscapeViewController.swift in Sources */,
