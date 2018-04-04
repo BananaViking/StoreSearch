@@ -14,7 +14,7 @@ class SearchViewController: UIViewController {
     var hasSearched = false
     var isLoading = false
     var dataTask: URLSessionDataTask?
-    var landscapeVC: LandscapeViewController?
+    var landscapeViewController: LandscapeViewController?
     
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var tableView: UITableView!
@@ -52,9 +52,10 @@ class SearchViewController: UIViewController {
     }
     
     func showLandscape(with coordinator: UIViewControllerTransitionCoordinator) {
-        guard landscapeVC == nil else { return }
-        landscapeVC = storyboard!.instantiateViewController(withIdentifier: "LandscapeViewController") as? LandscapeViewController
-        if let controller = landscapeVC {
+        guard landscapeViewController == nil else { return }
+        landscapeViewController = storyboard!.instantiateViewController(withIdentifier: "LandscapeViewController") as? LandscapeViewController
+        if let controller = landscapeViewController {
+            controller.searchResults = searchResults
             controller.view.frame = view.bounds
             controller.view.alpha = 0
             
@@ -73,14 +74,14 @@ class SearchViewController: UIViewController {
     }
     
     func hideLandscape(with coordinator: UIViewControllerTransitionCoordinator) {
-        if let controller = landscapeVC {
+        if let controller = landscapeViewController {
             controller.willMove(toParentViewController: nil)
             coordinator.animate(alongsideTransition: { _ in
                 controller.view.alpha = 0
             }, completion: { _ in
                 controller.view.removeFromSuperview()
                 controller.removeFromParentViewController()
-                self.landscapeVC = nil
+                self.landscapeViewController = nil
             })
         }
     }
