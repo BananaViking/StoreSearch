@@ -1,0 +1,47 @@
+/* Localized kind: Album */
+"Album" = "Album";
+
+/* Localized kind: Software */
+"App" = "App";
+
+/* Localized kind: Audio Book */
+"Audio Book" = "Audio Book";
+
+/* Localized kind: Book */
+"Book" = "Book";
+
+/* Localized kind: E-Book */
+"E-Book" = "E-Book";
+
+/* Price text */
+"Free" = "Free";
+
+/* Localized kind: Feature Movie */
+"Movie" = "Movie";
+
+/* Localized kind: Music Video */
+"Music Video" = "Music Video";
+
+/* Nothing Found Label Text */
+"Nothing Found" = "Nothing Found";
+
+/* OK button title */
+"OK" = "OK";
+
+/* Localized kind: Podcast */
+"Podcast" = "Podcast";
+
+/* Localized kind: Song */
+"Song" = "Song";
+
+/* Network error alert message */
+"There was an error accessing the iTunes Store. Please try again." = "There was an error accessing the iTunes Store. Please try again.";
+
+/* Localized kind: TV Episode */
+"TV Episode" = "TV Episode";
+
+/* Artist Name Label */
+"Unknown" = "Unknown";
+
+/* Network error alert title */
+"Whoops..." = "Whoops...";
